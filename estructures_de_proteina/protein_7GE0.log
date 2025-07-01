@@ -1,0 +1,94 @@
+2025-07-01 21:51:36,677 INFO:main.py:246:print_splash_screen:PDB2PQR v3.7.1: biomolecular structure conversion software.
+2025-07-01 21:51:36,677 INFO:main.py:248:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2025-07-01 21:51:36,677 INFO:main.py:248:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2025-07-01 21:51:36,677 INFO:main.py:770:main_driver:Checking and transforming input arguments.
+2025-07-01 21:51:36,678 INFO:main.py:774:main_driver:Loading topology files.
+2025-07-01 21:51:36,769 INFO:main.py:776:main_driver:Loading molecule: estructures_de_proteina/protein_7GE0.pdb
+2025-07-01 21:51:36,769 ERROR:pdb.py:2587:read_pdb:Error parsing line: invalid literal for int() with base 10: ''
+2025-07-01 21:51:36,769 ERROR:pdb.py:2588:read_pdb:<REMARK     2>
+2025-07-01 21:51:36,769 ERROR:pdb.py:2589:read_pdb:Truncating remaining errors for record type:REMARK
+2025-07-01 21:51:36,787 WARNING:io.py:474:get_molecule:Warning: estructures_de_proteina/protein_7GE0.pdb is a non-standard PDB file.
+
+2025-07-01 21:51:36,788 ERROR:io.py:475:get_molecule:['REMARK']
+2025-07-01 21:51:36,788 INFO:main.py:781:main_driver:Setting up molecule.
+2025-07-01 21:51:36,799 INFO:main.py:423:setup_molecule:Created biomolecule object with 304 residues and 2347 atoms.
+2025-07-01 21:51:36,799 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CA in ASP A 216.
+2025-07-01 21:51:36,799 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CB in ASP A 216.
+2025-07-01 21:51:36,799 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CG in ASP A 216.
+2025-07-01 21:51:36,799 WARNING:main.py:433:setup_molecule:Multiple occupancies found: OD1 in ASP A 216.
+2025-07-01 21:51:36,799 WARNING:main.py:433:setup_molecule:Multiple occupancies found: OD2 in ASP A 216.
+2025-07-01 21:51:36,799 WARNING:main.py:439:setup_molecule:Multiple occupancies found in ASP A 216. At least one of the instances is being ignored.
+2025-07-01 21:51:36,799 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CA in ARG A 217.
+2025-07-01 21:51:36,800 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CB in ARG A 217.
+2025-07-01 21:51:36,800 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CG in ARG A 217.
+2025-07-01 21:51:36,800 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CD in ARG A 217.
+2025-07-01 21:51:36,800 WARNING:main.py:433:setup_molecule:Multiple occupancies found: NE in ARG A 217.
+2025-07-01 21:51:36,800 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CZ in ARG A 217.
+2025-07-01 21:51:36,800 WARNING:main.py:433:setup_molecule:Multiple occupancies found: NH1 in ARG A 217.
+2025-07-01 21:51:36,800 WARNING:main.py:433:setup_molecule:Multiple occupancies found: NH2 in ARG A 217.
+2025-07-01 21:51:36,800 WARNING:main.py:439:setup_molecule:Multiple occupancies found in ARG A 217. At least one of the instances is being ignored.
+2025-07-01 21:51:36,800 INFO:main.py:785:main_driver:Setting termini states for biomolecule chains.
+2025-07-01 21:51:36,808 INFO:main.py:616:non_trivial:Loading forcefield.
+2025-07-01 21:51:36,819 INFO:main.py:620:non_trivial:Loading hydrogen topology definitions.
+2025-07-01 21:51:36,822 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue THR A 304
+2025-07-01 21:51:36,824 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue THR A 304
+2025-07-01 21:51:36,824 INFO:main.py:630:non_trivial:Attempting to repair 1 missing atoms in biomolecule.
+2025-07-01 21:51:36,825 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue THR A 304
+2025-07-01 21:51:36,827 INFO:biomolecule.py:1080:repair_heavy:Added atom OXT to residue THR A 304 at coordinates 7.295, -9.333, -11.584
+2025-07-01 21:51:36,827 INFO:main.py:635:non_trivial:Updating disulfide bridges.
+2025-07-01 21:51:36,827 INFO:main.py:638:non_trivial:Debumping biomolecule.
+2025-07-01 21:51:36,943 INFO:main.py:661:non_trivial:Adding hydrogens to biomolecule.
+2025-07-01 21:51:37,337 INFO:main.py:664:non_trivial:Debumping biomolecule (again).
+2025-07-01 21:51:37,737 INFO:main.py:666:non_trivial:Optimizing hydrogen bonds
+2025-07-01 21:51:39,503 INFO:main.py:678:non_trivial:Applying force field to biomolecule states.
+2025-07-01 21:51:39,524 INFO:main.py:725:non_trivial:Regenerating headers.
+2025-07-01 21:51:39,526 INFO:main.py:750:non_trivial:Regenerating PDB lines.
+2025-07-01 21:51:39,574 WARNING:main.py:326:print_pqr:Ignoring 391 header lines in output.
+2025-07-01 21:51:39,641 WARNING:main.py:369:print_pdb:Ignoring 391 header lines in output.
+2025-07-01 21:57:51,519 INFO:main.py:246:print_splash_screen:PDB2PQR v3.7.1: biomolecular structure conversion software.
+2025-07-01 21:57:51,519 INFO:main.py:248:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2025-07-01 21:57:51,519 INFO:main.py:248:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2025-07-01 21:57:51,519 INFO:main.py:770:main_driver:Checking and transforming input arguments.
+2025-07-01 21:57:51,520 INFO:main.py:774:main_driver:Loading topology files.
+2025-07-01 21:57:51,620 INFO:main.py:776:main_driver:Loading molecule: estructures_de_proteina/protein_7GE0.pdb
+2025-07-01 21:57:51,620 ERROR:pdb.py:2587:read_pdb:Error parsing line: invalid literal for int() with base 10: ''
+2025-07-01 21:57:51,621 ERROR:pdb.py:2588:read_pdb:<REMARK     2>
+2025-07-01 21:57:51,621 ERROR:pdb.py:2589:read_pdb:Truncating remaining errors for record type:REMARK
+2025-07-01 21:57:51,637 WARNING:io.py:474:get_molecule:Warning: estructures_de_proteina/protein_7GE0.pdb is a non-standard PDB file.
+
+2025-07-01 21:57:51,637 ERROR:io.py:475:get_molecule:['REMARK']
+2025-07-01 21:57:51,637 INFO:main.py:781:main_driver:Setting up molecule.
+2025-07-01 21:57:51,654 INFO:main.py:423:setup_molecule:Created biomolecule object with 304 residues and 2347 atoms.
+2025-07-01 21:57:51,654 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CA in ASP A 216.
+2025-07-01 21:57:51,654 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CB in ASP A 216.
+2025-07-01 21:57:51,654 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CG in ASP A 216.
+2025-07-01 21:57:51,654 WARNING:main.py:433:setup_molecule:Multiple occupancies found: OD1 in ASP A 216.
+2025-07-01 21:57:51,655 WARNING:main.py:433:setup_molecule:Multiple occupancies found: OD2 in ASP A 216.
+2025-07-01 21:57:51,655 WARNING:main.py:439:setup_molecule:Multiple occupancies found in ASP A 216. At least one of the instances is being ignored.
+2025-07-01 21:57:51,655 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CA in ARG A 217.
+2025-07-01 21:57:51,655 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CB in ARG A 217.
+2025-07-01 21:57:51,655 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CG in ARG A 217.
+2025-07-01 21:57:51,655 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CD in ARG A 217.
+2025-07-01 21:57:51,655 WARNING:main.py:433:setup_molecule:Multiple occupancies found: NE in ARG A 217.
+2025-07-01 21:57:51,655 WARNING:main.py:433:setup_molecule:Multiple occupancies found: CZ in ARG A 217.
+2025-07-01 21:57:51,655 WARNING:main.py:433:setup_molecule:Multiple occupancies found: NH1 in ARG A 217.
+2025-07-01 21:57:51,655 WARNING:main.py:433:setup_molecule:Multiple occupancies found: NH2 in ARG A 217.
+2025-07-01 21:57:51,655 WARNING:main.py:439:setup_molecule:Multiple occupancies found in ARG A 217. At least one of the instances is being ignored.
+2025-07-01 21:57:51,655 INFO:main.py:785:main_driver:Setting termini states for biomolecule chains.
+2025-07-01 21:57:51,668 INFO:main.py:616:non_trivial:Loading forcefield.
+2025-07-01 21:57:51,688 INFO:main.py:620:non_trivial:Loading hydrogen topology definitions.
+2025-07-01 21:57:51,693 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue THR A 304
+2025-07-01 21:57:51,696 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue THR A 304
+2025-07-01 21:57:51,696 INFO:main.py:630:non_trivial:Attempting to repair 1 missing atoms in biomolecule.
+2025-07-01 21:57:51,699 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue THR A 304
+2025-07-01 21:57:51,701 INFO:biomolecule.py:1080:repair_heavy:Added atom OXT to residue THR A 304 at coordinates 7.295, -9.333, -11.584
+2025-07-01 21:57:51,701 INFO:main.py:635:non_trivial:Updating disulfide bridges.
+2025-07-01 21:57:51,703 INFO:main.py:638:non_trivial:Debumping biomolecule.
+2025-07-01 21:57:51,795 INFO:main.py:661:non_trivial:Adding hydrogens to biomolecule.
+2025-07-01 21:57:52,393 INFO:main.py:664:non_trivial:Debumping biomolecule (again).
+2025-07-01 21:57:53,149 INFO:main.py:666:non_trivial:Optimizing hydrogen bonds
+2025-07-01 21:57:55,881 INFO:main.py:678:non_trivial:Applying force field to biomolecule states.
+2025-07-01 21:57:55,897 INFO:main.py:725:non_trivial:Regenerating headers.
+2025-07-01 21:57:55,899 INFO:main.py:750:non_trivial:Regenerating PDB lines.
+2025-07-01 21:57:56,002 WARNING:main.py:326:print_pqr:Ignoring 391 header lines in output.
+2025-07-01 21:57:56,074 WARNING:main.py:369:print_pdb:Ignoring 391 header lines in output.
